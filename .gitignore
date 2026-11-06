@@ -1,0 +1,14 @@
+# Node
+node_modules/
+*.log
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# 本地产物（本库刻意不含抓取/数据包/笔记输出物）
+output/
+_scratch/
