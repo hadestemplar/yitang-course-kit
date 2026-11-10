@@ -30,7 +30,7 @@ description: "把一门一堂课程的信息尽可能完整地抓成「课程信
 
 ## 输出位置
 
-`<工作区>\抓课包Skill\output\<课名>\`
+`C:\Users\hades\Documents\deepseek-harness\default-workspace\抓课包Skill\output\<课名>\`
 - `00-底稿.md` —— 主产物（见 §底稿模板）
 - `raw\` —— 每轮 Partner 原始输出，原样保存不改写
 - `img\` —— 图示原件
@@ -85,7 +85,7 @@ whyai yitang course sections <uniqId> --json    # 章节列表（可能为空）
 
 `course info` 补充：`name` / `subtitle` / `teacherName` / `tag` / `price` / `lessonStatus` / `lessonValid`。
 
-> 价格、作业、Candy **不抓**（用户 2026-10-28 裁定：对下游无用）。`maxAnswerScore` / `homeworkExists` 这类字段忽略即可，也不要跑 `yitang homework`。
+> 价格、作业、Candy **不抓**（用户 2026-10-28 裁定：对下游无用；2026-11-06 复述「Candy 以后都不需要获取」）。`maxAnswerScore` / `homeworkExists` 这类字段忽略即可，也不要跑 `yitang homework`。Candy 只记「课程承诺发什么」这一句，**具名清单一律不追、不进缺口清单、不为此请用户开逐字稿**。
 
 > **id 坑**：`course info` 与 `course sections` 只认 `uniqId`（形如 `8BwK673dae60bcc2`），传数字 `lessonId`（如 `1072`）会返回 `{"ok":false,"error":{"code":1000,"message":"您请求的页面不存在"}}`。
 

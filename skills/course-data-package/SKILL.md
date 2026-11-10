@@ -28,7 +28,7 @@ description: "把一份「课程信息底稿」（公共层素材）转成「操
 
 ## 输出位置
 
-`<工作区>\数据包Skill\output\<课题>\<课题>-数据包-v<版本>-<日期>.md`
+`C:\Users\hades\Documents\deepseek-harness\default-workspace\数据包Skill\output\<课题>\<课题>-数据包-v<版本>-<日期>.md`
 
 ## 数据包模板（八节，缺节即为不合格）
 
